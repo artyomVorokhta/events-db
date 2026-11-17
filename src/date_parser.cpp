@@ -1,10 +1,10 @@
 #include "date_parser.h"
 
-#include <sstream>
+#include <istream>
 
 #include "date.h"
 
-Date ParseDate(std::istringstream& stream) {
+Date ParseDate(std::istream& stream) {
   std::string date_string;
   stream >> date_string;
 

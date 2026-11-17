@@ -1,9 +1,9 @@
 #pragma once
 
-#include <sstream>
+#include <istream>
 
 #include "date.h"
 
-Date ParseDate(std::istringstream& stream);
+Date ParseDate(std::istream& stream);
 
 void TestParseDate();

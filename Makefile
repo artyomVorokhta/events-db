@@ -35,6 +35,6 @@ $(program) : $(objs)
 
 $(obj_dir)/%.o: $(src_dir)/%.cpp
 	mkdir -p $(dir $@)
-	$(CXX) -std=$(CXX_STANDART) $(mode_cxxflags) $(CXXFLAGS) -MMD -MP -c $< -o $@
+	$(CXX) -std=$(CXX_STANDARD) $(mode_cxxflags) $(CXXFLAGS) -MMD -MP -c $< -o $@
 
 -include $(deps)
